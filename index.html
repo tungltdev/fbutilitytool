@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>FB Utility Tool</title>
-    <meta name="description" content="FB Utility Tool, multi tool facebook"/>
-    <meta name="keywords" content="FB Utility Tool, multi tool facebook"/>
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"/>
+	<meta http-equiv="refresh" content="0;url=https://tungltdev.github.io/lt2tool/">
 </head>
-
-<body class="leading-normal tracking-normal text-indigo-400 m-6 bg-cover bg-fixed" style="background-image: url('header.png');">
+<body>
+</body>
 <div class="h-full">
     <!--Nav-->
     <div class="w-full container mx-auto">
@@ -136,46 +134,3 @@
 </div>
 </body>
 </html>
-<!--    Rainblur-Landing-Page-main-->
-
-<script>
-    const modal_overlay = document.querySelector('#modal_overlay');
-    const modal = document.querySelector('#modal');
-
-    function openModal (value){
-        const modalCl = modal.classList
-        const overlayCl = modal_overlay
-
-        if(value){
-            overlayCl.classList.remove('hidden')
-            setTimeout(() => {
-                modalCl.remove('opacity-0')
-                modalCl.remove('-translate-y-full')
-                modalCl.remove('scale-150')
-            }, 100);
-        } else {
-            modalCl.add('-translate-y-full')
-            setTimeout(() => {
-                modalCl.add('opacity-0')
-                modalCl.add('scale-150')
-            }, 100);
-            setTimeout(() => overlayCl.classList.add('hidden'), 300);
-        }
-    }
-
-    let stt = 1;
-    setInterval(function () {
-        if (stt % 2 === 0) {
-            document.getElementById('anh_main1').classList.add('hidden')
-            document.getElementById('anh_main1').classList.remove('block')
-            document.getElementById('anh_main2').classList.add('block')
-            document.getElementById('anh_main2').classList.remove('hidden')
-        } else {
-            document.getElementById('anh_main2').classList.add('hidden')
-            document.getElementById('anh_main2').classList.remove('block')
-            document.getElementById('anh_main1').classList.add('block')
-            document.getElementById('anh_main1').classList.remove('hidden')
-        }
-        stt++;
-    }, 2000)
-</script>
